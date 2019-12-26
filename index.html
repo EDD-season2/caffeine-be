@@ -442,8 +442,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#introduction">소개</a></li>
 <li><a href="#common">공통 규약</a></li>
-<li><a href="#_shop_api">Shop API</a></li>
-<li><a href="#_shop_create_api">shop-create API</a>
+<li><a href="#_shop_api">Shop API</a>
+<ul class="sectlevel1">
+<li><a href="#_가게_생성_api">가게 생성 API</a>
 <ul class="sectlevel2">
 <li><a href="#_request">Request</a></li>
 <li><a href="#_response">Response</a></li>
@@ -455,16 +456,120 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_response_2">Response</a></li>
 </ul>
 </li>
-<li><a href="#_shop_menu_list_api">shop-menu-list API</a>
+<li><a href="#_가게의_메뉴_조회_api">가게의 메뉴 조회 API</a>
 <ul class="sectlevel2">
 <li><a href="#_request_3">Request</a></li>
 <li><a href="#_response_3">Response</a></li>
 </ul>
 </li>
-<li><a href="#_shop_list_api">shop-list API</a>
+<li><a href="#_가게_목록_api">가게 목록 API</a>
 <ul class="sectlevel2">
 <li><a href="#_request_4">Request</a></li>
 <li><a href="#_response_4">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_menu_api">Menu API</a>
+<ul class="sectlevel1">
+<li><a href="#_메뉴_생성">메뉴 생성</a>
+<ul class="sectlevel2">
+<li><a href="#_request_5">Request</a></li>
+<li><a href="#_response_5">Response</a></li>
+</ul>
+</li>
+<li><a href="#_메뉴_단일_조회">메뉴 단일 조회</a>
+<ul class="sectlevel2">
+<li><a href="#_request_6">Request</a></li>
+<li><a href="#_response_6">Response</a></li>
+</ul>
+</li>
+<li><a href="#_메뉴_변경">메뉴 변경</a>
+<ul class="sectlevel2">
+<li><a href="#_request_7">Request</a></li>
+<li><a href="#_response_7">Response</a></li>
+</ul>
+</li>
+<li><a href="#_메뉴_삭제">메뉴 삭제</a>
+<ul class="sectlevel2">
+<li><a href="#_request_8">Request</a></li>
+<li><a href="#_response_8">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_owner_api">Owner API</a>
+<ul class="sectlevel1">
+<li><a href="#_사장_회원가입">사장 회원가입</a>
+<ul class="sectlevel2">
+<li><a href="#_request_9">Request</a></li>
+<li><a href="#_response_9">Response</a></li>
+</ul>
+</li>
+<li><a href="#_사장_로그인">사장 로그인</a>
+<ul class="sectlevel2">
+<li><a href="#_request_10">Request</a></li>
+<li><a href="#_response_10">Response</a></li>
+</ul>
+</li>
+<li><a href="#_사장_로그아웃">사장 로그아웃</a>
+<ul class="sectlevel2">
+<li><a href="#_request_11">Request</a></li>
+<li><a href="#_response_11">Response</a></li>
+</ul>
+</li>
+<li><a href="#_사장_본인_정보_조회">사장 본인 정보 조회</a>
+<ul class="sectlevel2">
+<li><a href="#_request_12">Request</a></li>
+<li><a href="#_response_12">Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_order_api">Order API</a>
+<ul class="sectlevel1">
+<li><a href="#_주문_생성">주문 생성</a>
+<ul class="sectlevel2">
+<li><a href="#_request_13">Request</a></li>
+<li><a href="#_response_13">Response</a></li>
+</ul>
+</li>
+<li><a href="#_주문_단일_조회_id">주문 단일 조회 (ID)</a>
+<ul class="sectlevel2">
+<li><a href="#_request_14">Request</a></li>
+<li><a href="#_response_14">Response</a></li>
+</ul>
+</li>
+<li><a href="#_주문_조회_상태">주문 조회 (상태)</a>
+<ul class="sectlevel2">
+<li><a href="#_request_15">Request</a></li>
+<li><a href="#_response_15">Response</a></li>
+</ul>
+</li>
+<li><a href="#_주문_처리">주문 처리</a>
+<ul class="sectlevel2">
+<li><a href="#_request_16">Request</a></li>
+<li><a href="#_response_16">Response</a></li>
+</ul>
+</li>
+<li><a href="#_주문_거절">주문 거절</a>
+<ul class="sectlevel2">
+<li><a href="#_request_17">Request</a></li>
+<li><a href="#_response_17">Response</a></li>
+</ul>
+</li>
+<li><a href="#_주문_완료">주문 완료</a>
+<ul class="sectlevel2">
+<li><a href="#_request_18">Request</a></li>
+<li><a href="#_response_18">Response</a></li>
+</ul>
+</li>
+<li><a href="#_가게_검색">가게 검색</a>
+<ul class="sectlevel2">
+<li><a href="#_request_19">Request</a></li>
+<li><a href="#_response_19">Response</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -485,14 +590,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 
 </div>
 </div>
+<h1 id="_shop_api" class="sect0"><a class="link" href="#_shop_api">Shop API</a></h1>
 <div class="sect1">
-<h2 id="_shop_api"><a class="link" href="#_shop_api">Shop API</a></h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_shop_create_api"><a class="link" href="#_shop_create_api">shop-create API</a></h2>
+<h2 id="_가게_생성_api"><a class="link" href="#_가게_생성_api">가게 생성 API</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_request"><a class="link" href="#_request">Request</a></h3>
@@ -662,7 +762,7 @@ Content-Length: 309
 </div>
 </div>
 <div class="sect1">
-<h2 id="_shop_menu_list_api"><a class="link" href="#_shop_menu_list_api">shop-menu-list API</a></h2>
+<h2 id="_가게의_메뉴_조회_api"><a class="link" href="#_가게의_메뉴_조회_api">가게의 메뉴 조회 API</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_request_3"><a class="link" href="#_request_3">Request</a></h3>
@@ -743,7 +843,7 @@ Content-Length: 3
 </div>
 </div>
 <div class="sect1">
-<h2 id="_shop_list_api"><a class="link" href="#_shop_list_api">shop-list API</a></h2>
+<h2 id="_가게_목록_api"><a class="link" href="#_가게_목록_api">가게 목록 API</a></h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_request_4"><a class="link" href="#_request_4">Request</a></h3>
@@ -845,11 +945,1245 @@ Content-Length: 654
 </div>
 </div>
 </div>
+<h1 id="_menu_api" class="sect0"><a class="link" href="#_menu_api">Menu API</a></h1>
+<div class="sect1">
+<h2 id="_메뉴_생성"><a class="link" href="#_메뉴_생성">메뉴 생성</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_5"><a class="link" href="#_request_5">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/menus' -i -X POST \
+    -H 'Content-Type: application/json' \
+    -d '{
+  "name" : "menuName",
+  "nameInEnglish" : "menuNameInEnglish",
+  "description" : "설명",
+  "price" : 5000,
+  "imgUrl" : "http://localhost:8080/img.jpeg",
+  "category" : "A",
+  "vendor" : 1
+}'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /v1/menus HTTP/1.1
+Content-Type: application/json
+Host: localhost:8080
+Content-Length: 195
+
+{
+  "name" : "menuName",
+  "nameInEnglish" : "menuNameInEnglish",
+  "description" : "설명",
+  "price" : 5000,
+  "imgUrl" : "http://localhost:8080/img.jpeg",
+  "category" : "A",
+  "vendor" : 1
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>{
+  "name" : "menuName",
+  "nameInEnglish" : "menuNameInEnglish",
+  "description" : "설명",
+  "price" : 5000,
+  "imgUrl" : "http://localhost:8080/img.jpeg",
+  "category" : "A",
+  "vendor" : 1
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_5"><a class="link" href="#_response_5">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 201 Created
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Location: /v1/menus/1</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_메뉴_단일_조회"><a class="link" href="#_메뉴_단일_조회">메뉴 단일 조회</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_6"><a class="link" href="#_request_6">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/menus/1' -i -X GET</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /v1/menus/1 HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Path Variable Example:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 4. /v1/menus/1</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>menuItemId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">메뉴 아이디</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_6"><a class="link" href="#_response_6">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Content-Length: 191
+
+{
+  "id" : 1,
+  "name" : "menuName",
+  "nameInEnglish" : "menuNameInEnglish",
+  "description" : "설명",
+  "price" : 5000,
+  "image" : "https://github.com/image",
+  "category" : "CAFFEINE"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>{
+  "id" : 1,
+  "name" : "menuName",
+  "nameInEnglish" : "menuNameInEnglish",
+  "description" : "설명",
+  "price" : 5000,
+  "image" : "https://github.com/image",
+  "category" : "CAFFEINE"
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_메뉴_변경"><a class="link" href="#_메뉴_변경">메뉴 변경</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_7"><a class="link" href="#_request_7">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/menus/1' -i -X PUT \
+    -H 'Content-Type: application/json' \
+    -d '{
+  "name" : "menuName",
+  "nameInEnglish" : "menuNameInEnglish",
+  "description" : "설명",
+  "price" : 5000,
+  "imgUrl" : "http://localhost:8080/image",
+  "category" : "CAFFEINE"
+}'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">PUT /v1/menus/1 HTTP/1.1
+Content-Type: application/json
+Host: localhost:8080
+Content-Length: 183
+
+{
+  "name" : "menuName",
+  "nameInEnglish" : "menuNameInEnglish",
+  "description" : "설명",
+  "price" : 5000,
+  "imgUrl" : "http://localhost:8080/image",
+  "category" : "CAFFEINE"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Path Variable Example:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 5. /v1/menus/1</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>menuItemId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">메뉴 아이디</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>{
+  "name" : "menuName",
+  "nameInEnglish" : "menuNameInEnglish",
+  "description" : "설명",
+  "price" : 5000,
+  "imgUrl" : "http://localhost:8080/image",
+  "category" : "CAFFEINE"
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_7"><a class="link" href="#_response_7">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_메뉴_삭제"><a class="link" href="#_메뉴_삭제">메뉴 삭제</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_8"><a class="link" href="#_request_8">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/menus/1' -i -X DELETE</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">DELETE /v1/menus/1 HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Path Variable Example:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 6. /v1/menus/1</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>menuItemId</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">메뉴 아이디</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_8"><a class="link" href="#_response_8">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 204 No Content
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_owner_api" class="sect0"><a class="link" href="#_owner_api">Owner API</a></h1>
+<div class="sect1">
+<h2 id="_사장_회원가입"><a class="link" href="#_사장_회원가입">사장 회원가입</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_9"><a class="link" href="#_request_9">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/owners' -i -X POST \
+    -H 'Content-Type: application/json' \
+    -d '{
+  "email" : "test@mail.com",
+  "password" : "123qweads!",
+  "shopName" : "shop1",
+  "shopAddress" : "서울특별시 송파구 오금로 142 (송파동)"
+}'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /v1/owners HTTP/1.1
+Content-Type: application/json
+Host: localhost:8080
+Content-Length: 157
+
+{
+  "email" : "test@mail.com",
+  "password" : "123qweads!",
+  "shopName" : "shop1",
+  "shopAddress" : "서울특별시 송파구 오금로 142 (송파동)"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>{
+  "email" : "test@mail.com",
+  "password" : "123qweads!",
+  "shopName" : "shop1",
+  "shopAddress" : "서울특별시 송파구 오금로 142 (송파동)"
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_9"><a class="link" href="#_response_9">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 201 Created
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Location: /v1/owners/0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_사장_로그인"><a class="link" href="#_사장_로그인">사장 로그인</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_10"><a class="link" href="#_request_10">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/owners/login' -i -X POST \
+    -H 'Content-Type: application/json' \
+    -d '{
+  "email" : "test@mail.com",
+  "password" : "123qweads!"
+}'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /v1/owners/login HTTP/1.1
+Content-Type: application/json
+Host: localhost:8080
+Content-Length: 60
+
+{
+  "email" : "test@mail.com",
+  "password" : "123qweads!"
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>{
+  "email" : "test@mail.com",
+  "password" : "123qweads!"
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_10"><a class="link" href="#_response_10">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_사장_로그아웃"><a class="link" href="#_사장_로그아웃">사장 로그아웃</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_11"><a class="link" href="#_request_11">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/owners/logout' -i -X GET</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /v1/owners/logout HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_11"><a class="link" href="#_response_11">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_사장_본인_정보_조회"><a class="link" href="#_사장_본인_정보_조회">사장 본인 정보 조회</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_12"><a class="link" href="#_request_12">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/owners/me' -i -X GET</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /v1/owners/me HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_12"><a class="link" href="#_response_12">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Content-Length: 222
+
+{
+  "id" : 1,
+  "email" : "test@mail.com",
+  "shop" : {
+    "id" : 2,
+    "name" : "name",
+    "image" : "https://github.com/image",
+    "address" : "서울시 송파구 오금로",
+    "phoneNumber" : "010-111-1111"
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>{
+  "id" : 1,
+  "email" : "test@mail.com",
+  "shop" : {
+    "id" : 2,
+    "name" : "name",
+    "image" : "https://github.com/image",
+    "address" : "서울시 송파구 오금로",
+    "phoneNumber" : "010-111-1111"
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h1 id="_order_api" class="sect0"><a class="link" href="#_order_api">Order API</a></h1>
+<div class="sect1">
+<h2 id="_주문_생성"><a class="link" href="#_주문_생성">주문 생성</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_13"><a class="link" href="#_request_13">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/shops/1/orders' -i -X POST \
+    -H 'Content-Type: application/json' \
+    -d '{
+  "menuItemIds" : [ 1, 2 ]
+}'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /v1/shops/1/orders HTTP/1.1
+Content-Type: application/json
+Host: localhost:8080
+Content-Length: 30
+
+{
+  "menuItemIds" : [ 1, 2 ]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>{
+  "menuItemIds" : [ 1, 2 ]
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_13"><a class="link" href="#_response_13">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 201 Created
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Location: /v1/shops/1/orders/0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_주문_단일_조회_id"><a class="link" href="#_주문_단일_조회_id">주문 단일 조회 (ID)</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_14"><a class="link" href="#_request_14">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/shops/1/orders/1' -i -X GET</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /v1/shops/1/orders/1 HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_14"><a class="link" href="#_response_14">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Content-Length: 467
+
+{
+  "id" : 1,
+  "status" : "PENDING",
+  "orderItems" : [ {
+    "id" : 1,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 5000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  }, {
+    "id" : 2,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 6000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  } ]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>{
+  "id" : 1,
+  "status" : "PENDING",
+  "orderItems" : [ {
+    "id" : 1,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 5000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  }, {
+    "id" : 2,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 6000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  } ]
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_주문_조회_상태"><a class="link" href="#_주문_조회_상태">주문 조회 (상태)</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_15"><a class="link" href="#_request_15">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/shops/1/orders?status=PENDING' -i -X GET</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /v1/shops/1/orders?status=PENDING HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_15"><a class="link" href="#_response_15">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Content-Length: 940
+
+[ {
+  "id" : 1,
+  "status" : "PENDING",
+  "orderItems" : [ {
+    "id" : 1,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 5000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  }, {
+    "id" : 2,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 6000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  } ]
+}, {
+  "id" : 1,
+  "status" : "PENDING",
+  "orderItems" : [ {
+    "id" : 1,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 5000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  }, {
+    "id" : 2,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 6000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  } ]
+} ]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>[ {
+  "id" : 1,
+  "status" : "PENDING",
+  "orderItems" : [ {
+    "id" : 1,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 5000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  }, {
+    "id" : 2,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 6000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  } ]
+}, {
+  "id" : 1,
+  "status" : "PENDING",
+  "orderItems" : [ {
+    "id" : 1,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 5000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  }, {
+    "id" : 2,
+    "name" : "name",
+    "nameInEnglish" : "nameInEnglish",
+    "description" : "설명",
+    "price" : 6000,
+    "image" : "https://github.com/image.jpeg",
+    "category" : "COFFEE"
+  } ]
+} ]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_주문_처리"><a class="link" href="#_주문_처리">주문 처리</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_16"><a class="link" href="#_request_16">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/shops/1/orders/1/accept' -i -X PUT</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">PUT /v1/shops/1/orders/1/accept HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_16"><a class="link" href="#_response_16">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_주문_거절"><a class="link" href="#_주문_거절">주문 거절</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_17"><a class="link" href="#_request_17">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/shops/1/orders/1/reject' -i -X PUT</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">PUT /v1/shops/1/orders/1/reject HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_17"><a class="link" href="#_response_17">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_주문_완료"><a class="link" href="#_주문_완료">주문 완료</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_18"><a class="link" href="#_request_18">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/shops/1/orders/1/finish' -i -X PUT</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">PUT /v1/shops/1/orders/1/finish HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_18"><a class="link" href="#_response_18">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_가게_검색"><a class="link" href="#_가게_검색">가게 검색</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_request_19"><a class="link" href="#_request_19">Request</a></h3>
+<div class="paragraph">
+<p>CURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ curl 'http://localhost:8080/v1/shops/search/?keyword=address&amp;contents=%EC%86%A1%ED%8C%8C%EA%B5%AC&amp;size=5&amp;page=0' -i -X GET</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /v1/shops/search/?keyword=address&amp;contents=%EC%86%A1%ED%8C%8C%EA%B5%AC&amp;size=5&amp;page=0 HTTP/1.1
+Host: localhost:8080</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Request Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_response_19"><a class="link" href="#_response_19">Response</a></h3>
+<div class="paragraph">
+<p>Response HTTP Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/json
+Content-Length: 910
+
+{
+  "content" : [ {
+    "id" : 100,
+    "name" : "어디야 커피 잠실점",
+    "image" : "https://github.com/eunsukko/TIL/blob/master/201912/caffeine/pictures/starbucks_%EC%84%9D%EC%B4%8C%ED%98%B8%EC%88%98.jpg?raw=true",
+    "address" : "서울특별시 송파구 석촌호수로 262 (송파동)",
+    "phoneNumber" : "02-758-8693"
+  }, {
+    "id" : 101,
+    "name" : "석촌 호수",
+    "image" : "https://github.com/eunsukko/TIL/blob/master/201912/caffeine/pictures/starbucks_%EC%86%A1%ED%8C%8C%EA%B5%AC%EC%B2%AD.jpeg?raw=true",
+    "address" : "서울특별시 송파구 오금로 142 (송파동)",
+    "phoneNumber" : "02-421-3622"
+  } ],
+  "pageable" : "INSTANCE",
+  "totalElements" : 2,
+  "last" : true,
+  "totalPages" : 1,
+  "first" : true,
+  "numberOfElements" : 2,
+  "sort" : {
+    "sorted" : false,
+    "unsorted" : true,
+    "empty" : true
+  },
+  "size" : 0,
+  "number" : 0,
+  "empty" : false
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Response Body Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code>{
+  "content" : [ {
+    "id" : 100,
+    "name" : "어디야 커피 잠실점",
+    "image" : "https://github.com/eunsukko/TIL/blob/master/201912/caffeine/pictures/starbucks_%EC%84%9D%EC%B4%8C%ED%98%B8%EC%88%98.jpg?raw=true",
+    "address" : "서울특별시 송파구 석촌호수로 262 (송파동)",
+    "phoneNumber" : "02-758-8693"
+  }, {
+    "id" : 101,
+    "name" : "석촌 호수",
+    "image" : "https://github.com/eunsukko/TIL/blob/master/201912/caffeine/pictures/starbucks_%EC%86%A1%ED%8C%8C%EA%B5%AC%EC%B2%AD.jpeg?raw=true",
+    "address" : "서울특별시 송파구 오금로 142 (송파동)",
+    "phoneNumber" : "02-421-3622"
+  } ],
+  "pageable" : "INSTANCE",
+  "totalElements" : 2,
+  "last" : true,
+  "totalPages" : 1,
+  "first" : true,
+  "numberOfElements" : 2,
+  "sort" : {
+    "sorted" : false,
+    "unsorted" : true,
+    "empty" : true
+  },
+  "size" : 0,
+  "number" : 0,
+  "empty" : false
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 0.0.1-SNAPSHOT<br>
-Last updated 2019-12-26 06:52:28 UTC
+Last updated 2019-12-26 06:55:33 UTC
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
